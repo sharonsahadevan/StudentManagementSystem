@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="student" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-OR90E4H\SQLEXPRESS;Initial Catalog=student;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="StudentManagementSystem.Properties.Settings" SettingsPropertyName="studentConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.studentInfo" Member="studentInfos">
+    <Type Name="studentInfo">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NChar(25)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NChar(55)" CanBeNull="true" />
+      <Column Name="Dob" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ContactNumber" Type="System.String" DbType="NChar(12)" CanBeNull="true" />
+      <Column Name="Gpa" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
