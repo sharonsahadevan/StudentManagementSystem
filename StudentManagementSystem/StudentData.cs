@@ -135,7 +135,7 @@ namespace StudentManagementSystem
                         command = new SqlCommand(deleteStatement,conn);
                         command.ExecuteNonQuery();// delete the data from database.
                         GetData(selectStatement);
-                        dataGridView1.Update();
+                        dataGridView1.Update();// Redraw the datagrid view
                     }
                     catch (SqlException ex)
                     {
